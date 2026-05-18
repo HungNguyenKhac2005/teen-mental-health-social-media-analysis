@@ -54,7 +54,7 @@ select * from social_media_addiction_by_gender_age_group;
 | Male   | 13–15     | 4.56 | 4.60 | 5.48 | 6.00 |
 | Male   | 15–18     | 4.75 | 4.75 | 5.62 | 6.00 |
 | Male   | 18+       | 4.30 | 4.50 | 5.83 | 6.00 |  
---
+
 ***Insights***
 - Đối với thời gian sử dụng điện thoại trung bình thì nhóm nữ giới từ 13-15 và 15-18 sử dụng ít hơn so với nhóm nam giới cùng độ tuổi, nhóm từ trên 18 tuổi thì nữ lại lại có xu hướng dùng nhiều hơn, đối với mức độ nghiện  
 thì hai nhóm 15-18 tuổi và trên 18 tuổi ở nam giới có xu hướng nghiện nặng hơn so với nhóm nữ giới cùng tuổi, riêng nhóm nữ giới 13-15 thì lại có mức độ nghiện cao hơn nhóm nam giới cùng tuổi  
