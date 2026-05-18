@@ -18,31 +18,30 @@ Tôi là ***Nguyễn Khắc Hưng (Han/Victor)*** hiện đang là sinh viên **
 ***DBeaver***: IDE dùng để viết truy vấn SQL, quản lý file phân tích theo dõi, v.v.  
 ## 📊 Analysis  
 Mỗi truy vấn tôi đưa ra nhằm giải quyết một câu hỏi kinh doanh, vấn đề của doanh nghiệp đang gặp phải  
-
-```markdown
+**Vấn đề 1**: Phân tích mức độ phân hóa của daily_social_media_hours và addiction_level theo giới tính và nhóm độ tuổi  
 ```sql
-SELECT
-    skills,
-    COUNT(skills_job_dim.job_id) AS demand_count
-FROM job_postings_fact
-INNER JOIN skills_job_dim ON job_postings_fact.job_id = skills_job_dim.job_id
-INNER JOIN skills_dim ON skills_job_dim.skill_id = skills_dim.skill_id
-WHERE
-    job_title_short = 'Data Analyst'
-    AND job_work_from_home = True
-GROUP BY
-    skills
-ORDER BY
-    demand_count DESC
-LIMIT 5;  
-```
-aaaaa  
-| Kỹ năng | Số lượng nhu cầu |
-|--------|----------------:|
-| SQL    | 7291 |
-| Từ Excel | 4611 |
-| Python | 4330 |
-| Tableau | 3745 |
-| Power BI | 2609 |
+create view social_media_addiction_by_gender_age_group as
+with age_group_table as(
+select gender,
+daily_social_media_hours, 
+addiction_level,
+case
+	when age >=13 and age < 15 then '13-15'
+	when age>=15 and age < 18 then '15-18'
+	when age>=18 then '18+'
+end as age_group
+from teen_mental_health_analysis
+)
 
-*Bảng nhu cầu về 5 kỹ năng hàng đầu trong tin tuyển dụng nhà phân tích dữ liệu.*
+select gender,
+age_group,
+ROUND(AVG(daily_social_media_hours)::numeric,2) as avg_daily_social_media_hours,
+PERCENTILE_CONT(0.5) within group (order by daily_social_media_hours) as median_daily_social_media_hours,
+ROUND(AVG(addiction_level)::numeric,2) as avg_addiction_level,
+PERCENTILE_CONT(0.5) within group (order by addiction_level) as median_addiction_level
+from age_group_table
+group by gender, 
+age_group;
+
+select * from social_media_addiction_by_gender_age_group;
+```
