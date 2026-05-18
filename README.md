@@ -36,7 +36,7 @@ ORDER BY
     demand_count DESC
 LIMIT 5;  
 
-
+bảng số liệu  
 | Kỹ năng | Số lượng nhu cầu |
 |--------|----------------:|
 | SQL    | 7291 |
