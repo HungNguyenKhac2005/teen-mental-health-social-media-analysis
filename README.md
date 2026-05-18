@@ -17,3 +17,13 @@ Tôi là ***Nguyễn Khắc Hưng (Han/Victor)*** hiện đang là sinh viên **
 ***Postgres***: Hệ thống quản lý cơ sở dữ liệu, mạnh và hiện đại  
 ***DBeaver***: IDE dùng để viết truy vấn SQL, quản lý file phân tích theo dõi, v.v.  
 ## 📊 Analysis  
+Mỗi truy vấn tôi đưa ra nhằm giải quyết một câu hỏi kinh doanh, vấn đề của doanh nghiệp đang gặp phải  
+| Kỹ năng | Số lượng nhu cầu |
+|--------|----------------:|
+| SQL    | 7291 |
+| Từ Excel | 4611 |
+| Python | 4330 |
+| Tableau | 3745 |
+| Power BI | 2609 |
+
+*Bảng nhu cầu về 5 kỹ năng hàng đầu trong tin tuyển dụng nhà phân tích dữ liệu.*
