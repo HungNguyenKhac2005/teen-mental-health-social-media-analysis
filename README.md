@@ -45,3 +45,12 @@ age_group;
 
 select * from social_media_addiction_by_gender_age_group;
 ```
+***Out put***  
+| Gender | Age Group | Avg Daily Social Media Hours | Median Daily Social Media Hours | Avg Addiction Level | Median Addiction Level |
+|--------|-----------|-----------------------------:|--------------------------------:|--------------------:|-----------------------:|
+| Female | 13–15     | 4.31 | 4.10 | 5.54 | 6.00 |
+| Female | 15–18     | 4.67 | 4.80 | 5.36 | 6.00 |
+| Female | 18+       | 4.47 | 4.30 | 5.64 | 6.00 |
+| Male   | 13–15     | 4.56 | 4.60 | 5.48 | 6.00 |
+| Male   | 15–18     | 4.75 | 4.75 | 5.62 | 6.00 |
+| Male   | 18+       | 4.30 | 4.50 | 5.83 | 6.00 |
