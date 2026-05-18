@@ -34,7 +34,7 @@ GROUP BY
     skills
 ORDER BY
     demand_count DESC
-LIMIT 5;
+LIMIT 5;  
 | Kỹ năng | Số lượng nhu cầu |
 |--------|----------------:|
 | SQL    | 7291 |
