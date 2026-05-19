@@ -91,5 +91,19 @@ from academic_anxiety_summary_by_platform_usage;
 - Quan sát ta thấy nhóm sử dụng cả hai loại mạng xã hội là instagram và tiktok thì có điểm toonge kết thấp hơn nhóm người chỉ sử dụng hoặc instargram hoặc tiktok  
 - Đối với chỉ số lo âu, thì nhóm người sử dụng cả hai loại mạng xã hội có chỉ số lo âu thấp hơn so với nhóm người chỉ sử dụng tiktok hoặc instagram
 
+**Vấn đề 3**: Phân tích mối tương quan giữa thời gian sử dụng điện thoại trước khi ngủ và thời gian ngủ  
+```sql
+select 
+corr(screen_time_before_sleep, sleep_hours) as correlation
+from teen_mental_health_analysis;   
+```   
+
+***Out put***  
+| Correlation |
+|------------:|
+| 0.0102352814 |
+
+***Insight***
+
 
 
