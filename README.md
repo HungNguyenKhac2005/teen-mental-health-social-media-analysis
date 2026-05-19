@@ -134,7 +134,22 @@ select * from social_media_usage_summary_by_social_interaction_level;
 - Đối với nhóm có mức độ tương tác xã hội thấp thì thời gian sử dụng mạng xã hội cũng khá nhiều  
 - Nhìn tổng quát thì mức độ tương tác xã hội có ảnh hưởng đến thời gian sử dụng mạng xã hội theo xu hướng bù đắp, tuy nhiên mức độ ảnh hưởng tương đối thấp
 
-**Vấn đề 5**: Trong 3 biến việc thiếu ngủ (sleep_hours), thời lượng dùng MXH (daily_social_media_hours), và mức độ nghiện (addiction_level), yếu tố nào đẩy mức độ lo âu (anxiety_level) lên cao nhất?
+**Vấn đề 5**: Trong 3 biến việc thiếu ngủ (sleep_hours), thời lượng dùng MXH (daily_social_media_hours), và mức độ nghiện (addiction_level), yếu tố nào đẩy mức độ lo âu (anxiety_level) lên cao nhất?  
+```sql
+select 
+corr(sleep_hours, anxiety_level) as corr_anxiety_level_sleep_hours,
+corr(daily_social_media_hours, anxiety_level) as corr_anxiety_level_daily_social_media_hours,
+corr(addiction_level, anxiety_level) as corr_anxiety_level_addiction_level
+from teen_mental_health_analysis;
+```
+
+***Out put***  
+| Correlation: Anxiety Level vs Sleep Hours | Correlation: Anxiety Level vs Daily Social Media Hours | Correlation: Anxiety Level vs Addiction Level |
+|------------------------------------------:|------------------------------------------------------:|---------------------------------------------:|
+|                               -0.0118786929 |                                             0.0278347563 |                                    0.0311537836 |  
+***Insight***
+- 
+
   
 
 
