@@ -81,11 +81,11 @@ from academic_anxiety_summary_by_platform_usage;
 ```
 
 ***Out put***  
-| Most Used Platform | Count | Avg Daily Social Media Hours | Median Daily Social Media Hours | Avg Addiction Level | Median Addiction Level |
-|-------------------|------:|-----------------------------:|--------------------------------:|--------------------:|----------------------:|
-| Both              |   391 |                         2.98 |                           2.990 |                5.49 |                   5.0 |
-| Instagram         |   411 |                         3.00 |                           3.000 |                5.67 |                   6.0 |
-| TikTok            |   398 |                         3.00 |                           2.965 |                5.75 |                   6.0 |
+| Platform Usage | Total | Avg Academic Performance | Median Academic Performance | Avg Anxiety Level | Median Anxiety Level |
+|---------------|------:|-------------------------:|----------------------------:|------------------:|--------------------:|
+| Both          |   391 |                     2.98 |                       2.990 |              5.49 |                   5 |
+| Instagram     |   411 |                     3.00 |                       3.000 |              5.67 |                   6 |
+| TikTok        |   398 |                     3.00 |                       2.965 |              5.75 |                   6 |
 
 ***Insight***
 
