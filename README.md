@@ -104,6 +104,31 @@ from teen_mental_health_analysis;
 | 0.0102352814 |
 
 ***Insight***
+- Quan sát ta thấy không có mối tương quan nghịch biến nào giữa thời gian sử dụng mạng xã hội trước khi ngủ và thời gian ngủ cả, độ tương quan thấp cho thấy thời gian ngủ không liên quan đến thời gian sử dụng mạng xã hội trước khi ngủ
+
+**Vấn đề 4**: Phân tích mức độ tương quan giữa thời gian sử dụng mạng xã hội và mức độ tương tác xã hội  
+```sql
+create view social_media_usage_summary_by_social_interaction_level as
+select 
+social_interaction_level,
+count(*) as total,
+SUM(daily_social_media_hours) as total_daily_social_media_hours,
+round(AVG(daily_social_media_hours)::numeric, 2) as avg_daily_social_media_hours,
+PERCENTILE_CONT(0.5) within group (order by daily_social_media_hours) as median_daily_social_media_hours
+from teen_mental_health_analysis
+group by social_interaction_level;
+
+select * from social_media_usage_summary_by_social_interaction_level;
+```
+
+***Out put***  
+| Social Interaction Level | Total | Total Daily Social Media Hours | Avg Daily Social Media Hours | Median Daily Social Media Hours |
+|--------------------------|------:|-------------------------------:|-----------------------------:|--------------------------------:|
+| High                     |   369 |                         1644.7 |                         4.46 |                             4.3 |
+| Low                      |   415 |                         1883.9 |                         4.54 |                             4.6 |
+| Medium                   |   416 |                         1915.4 |                         4.60 |                             4.6 |
+
+***Insight***
 
 
 
