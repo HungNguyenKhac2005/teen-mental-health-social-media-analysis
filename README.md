@@ -87,5 +87,9 @@ from academic_anxiety_summary_by_platform_usage;
 | Instagram     |   411 |                     3.00 |                       3.000 |              5.67 |                   6 |
 | TikTok        |   398 |                     3.00 |                       2.965 |              5.75 |                   6 |
 
-***Insight***
+***Insight***  
+- Quan sát ta thấy nhóm sử dụng cả hai loại mạng xã hội là instagram và tiktok thì có điểm toonge kết thấp hơn nhóm người chỉ sử dụng hoặc instargram hoặc tiktok  
+- Đối với chỉ số lo âu, thì nhóm người sử dụng cả hai loại mạng xã hội có chỉ số lo âu thấp hơn so với nhóm người chỉ sử dụng tiktok hoặc instagram
+
+
 
