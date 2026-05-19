@@ -57,8 +57,27 @@ select * from social_media_addiction_by_gender_age_group;
 
 ***Insights***
 - Đối với thời gian sử dụng điện thoại trung bình thì nhóm nữ giới từ 13-15 và 15-18 sử dụng ít hơn so với nhóm nam giới cùng độ tuổi, nhóm từ trên 18 tuổi thì nữ lại lại có xu hướng dùng nhiều hơn, đối với mức độ nghiện  
-thì hai nhóm 15-18 tuổi và trên 18 tuổi ở nam giới có xu hướng nghiện nặng hơn so với nhóm nữ giới cùng tuổi, riêng nhóm nữ giới 13-15 thì lại có mức độ nghiện cao hơn nhóm nam giới cùng tuổi  
+thì hai nhóm 15-18 tuổi và trên 18 tuổi ở nam giới có xu hướng nghiện nặng hơn so với nhóm nữ giới cùng tuổi, riêng nhóm nữ giới 13-15 thì lại có mức độ nghiện cao hơn nhóm nam giới cùng tuổi
 - Nhóm sử dụng điện thoại trung bình 1 ngày nhiều nhất là nhóm nam giới từ 15-18 tuổi, nhóm có độ sử dụng trung bình 1 ngày thấp nhất là nhóm nam giới trên 18 tuổi và nữ giới từ 13-15  
 - Nhóm có mức độ nghiện cao nhất là là nam giới trên 18 tuổi và nhóm có độ nghiện thấp nhất là nữ giới từ 13-15 tuổi  
 - Nhìn chung thì đối với nhóm giới tính thì nam giới có xu hướng sử dụng điện thoại nhiều hơn và mức độ nghiên cũng cao hơn nữ giới, đối với nhóm độ tuổi thì người trên 18 tuổi có xu hướng sử dụng điện thoại ít hơn người dưới 18 tuổi  
-- trong 3 nhóm đọ tuổi thì nhóm từ 13-15 tuổi có thời lượng sử dụng nhiều nhất, tuy nhiên ở mức độ nghiện thì người trên 18 tuổi có thời lượng sử dụng ít nhưng lại có độ nghiện cao hơn khá nhiều so với hai nhóm còn lại.  
+- trong 3 nhóm đọ tuổi thì nhóm từ 13-15 tuổi có thời lượng sử dụng nhiều nhất, tuy nhiên ở mức độ nghiện thì người trên 18 tuổi có thời lượng sử dụng ít nhưng lại có độ nghiện cao hơn khá nhiều so với hai nhóm còn lại.
+**Vấn đề 2**: Phân tích mức độ ảnh hưởng của các loại mạng xã hội đến kết quả học tập và chỉ số lo âu
+  ```sql
+  create view academic_anxiety_summary_by_platform_usage as
+select 
+platform_usage,
+count(*) as total,
+round(AVG(academic_performance)::numeric, 2) as avg_academic_performance,
+PERCENTILE_CONT(0.5) within group (order by academic_performance) as median_academic_performance,
+round(AVG(anxiety_level)::numeric, 2) as avg_anxiety_level,
+PERCENTILE_CONT(0.5) within group (order by anxiety_level) as median_anxiety_level
+from teen_mental_health_analysis
+group by platform_usage;
+
+select * 
+from academic_anxiety_summary_by_platform_usage;
+```
+
+***Out put***
+
