@@ -147,7 +147,8 @@ from teen_mental_health_analysis;
 | Correlation: Anxiety Level vs Sleep Hours | Correlation: Anxiety Level vs Daily Social Media Hours | Correlation: Anxiety Level vs Addiction Level |
 |------------------------------------------:|------------------------------------------------------:|---------------------------------------------:|
 |                               -0.0118786929 |                                             0.0278347563 |                                    0.0311537836 |  
-***Insight***
+
+***Insight***  
 - 
 
   
