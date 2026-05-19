@@ -61,7 +61,7 @@ thì hai nhóm 15-18 tuổi và trên 18 tuổi ở nam giới có xu hướng n
 - Nhóm sử dụng điện thoại trung bình 1 ngày nhiều nhất là nhóm nam giới từ 15-18 tuổi, nhóm có độ sử dụng trung bình 1 ngày thấp nhất là nhóm nam giới trên 18 tuổi và nữ giới từ 13-15  
 - Nhóm có mức độ nghiện cao nhất là là nam giới trên 18 tuổi và nhóm có độ nghiện thấp nhất là nữ giới từ 13-15 tuổi  
 - Nhìn chung thì đối với nhóm giới tính thì nam giới có xu hướng sử dụng điện thoại nhiều hơn và mức độ nghiên cũng cao hơn nữ giới, đối với nhóm độ tuổi thì người trên 18 tuổi có xu hướng sử dụng điện thoại ít hơn người dưới 18 tuổi  
-- trong 3 nhóm đọ tuổi thì nhóm từ 13-15 tuổi có thời lượng sử dụng nhiều nhất, tuy nhiên ở mức độ nghiện thì người trên 18 tuổi có thời lượng sử dụng ít nhưng lại có độ nghiện cao hơn khá nhiều so với hai nhóm còn lại.
+- trong 3 nhóm đọ tuổi thì nhóm từ 13-15 tuổi có thời lượng sử dụng nhiều nhất, tuy nhiên ở mức độ nghiện thì người trên 18 tuổi có thời lượng sử dụng ít nhưng lại có độ nghiện cao hơn khá nhiều so với hai nhóm còn lại.  
 **Vấn đề 2**: Phân tích mức độ ảnh hưởng của các loại mạng xã hội đến kết quả học tập và chỉ số lo âu
   ```sql
   create view academic_anxiety_summary_by_platform_usage as
