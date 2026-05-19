@@ -129,6 +129,10 @@ select * from social_media_usage_summary_by_social_interaction_level;
 | Medium                   |   416 |                         1915.4 |                         4.60 |                             4.6 |
 
 ***Insight***
+- Nhóm sử dụng mạng xã hội nhiều nhất là nhóm Medium điều này cho thấy những người có mức độ tương tác xã hội ở mức tủng bình có mức độ sử dụng mạng xã hội nhiều nhất  
+- Nhóm sử dụng mạng xã hội ít nhất là nhóm Hight, điều này là dễ hiểu vì những người có mức độ tương tác xã hội cao thường thích đi ra ngời chơi thể thao, nói truyện thay vì ở nhà xem mạng xã hội
+- Đối với nhóm có mức độ tương tác xã hội thấp thì thời gian sử dụng mạng xã hội cũng khá nhiều  
+- Nhìn tổng quát thì mức độ tương tác xã hội có ảnh hưởng đến thời gian sử dụng mạng xã hội theo xu hướng bù đắp, tuy nhiên mức độ ảnh hưởng tương đối thấp   
 
 
 
