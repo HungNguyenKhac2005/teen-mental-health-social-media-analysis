@@ -1,4 +1,4 @@
-# 🧠 Teen Mental Health & Social Media Analysis
+# 🧠 Teen Mental Health & Social Media SQL Analysis
 
 ## ✒️ 1. Giới thiệu về tác giả
 
