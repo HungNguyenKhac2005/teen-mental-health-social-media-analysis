@@ -1,6 +1,6 @@
 # 🧠 Teen Mental Health & Social Media Analysis
 
-## ✒️ 1. Giới thiệu về tác giả
+## ✒️ Giới thiệu về tác giả
 
 - **Tên:** Nguyễn Khắc Hưng
 - **Vị trí:** Data Analyst
@@ -8,7 +8,7 @@
 
 ---
 
-## 📝 2. Tổng quan dự án (Project Overview)
+## 📝 Tổng quan dự án (Project Overview)
 
 Dự án này tập trung vào việc phân tích và đánh giá tác động của thói quen sử dụng mạng xã hội (tiêu biểu như TikTok và Instagram) đối với sức khỏe tinh thần, chất lượng giấc ngủ và kết quả học tập của thanh thiếu niên. Bằng cách khai phá và xử lý bộ dữ liệu thực tế gồm **1,200 học sinh**, dự án hướng tới việc tìm ra câu trả lời cho các mối quan hệ phức tạp giữa thời lượng lướt mạng xã hội, thời gian dùng điện thoại trước khi ngủ với các chỉ số sức khỏe tinh thần như lo âu (Anxiety), căng thẳng (Stress), mức độ nghiện (Addiction) và nguy cơ trầm cảm (Depression).
 
